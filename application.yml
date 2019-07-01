@@ -1,1 +1,15 @@
-profile: profile-default
+spring:
+ profiles:
+    active:
+    - dev
+---
+spring:
+    profiles: dev               #开发环境
+    application:
+        name: microservicecloud-config-mrlv-dev  
+---
+spring:
+    profiles: test               #测试环境
+    application:
+        name: microservicecloud-config-mrlv-test
+# 请保存为UTF-8格式
